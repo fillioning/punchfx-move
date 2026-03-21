@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Build Punch-In FX module for Move Everything (ARM64)
+# Build Punch-In FX module for Schwung (ARM64)
 #
 # Automatically uses Docker for cross-compilation if needed.
 # Set CROSS_PREFIX to skip Docker (e.g., for native ARM builds).
