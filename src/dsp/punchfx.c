@@ -155,7 +155,7 @@ static const host_api_v1_t *g_host = NULL;
 /* ───────────────────────── Helpers ───────────────────────── */
 
 /* File-based logging — works from any thread including audio render */
-#define PLOG_PATH "/data/UserData/move-anything/punchfx_debug.log"
+#define PLOG_PATH "/data/UserData/schwung/punchfx_debug.log"
 static int plog_count = 0;
 
 static void plog(const char *msg) {

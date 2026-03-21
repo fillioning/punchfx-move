@@ -1,6 +1,6 @@
 # Punch-In FX
 
-PO-33 K.O. style punch-in effects for [Ableton Move](https://www.ableton.com/move/), built on the [Move Everything](https://github.com/charlesvestal/move-everything) framework.
+PO-33 K.O. style punch-in effects for [Ableton Move](https://www.ableton.com/move/), built on the [Schwung](https://github.com/charlesvestal/move-everything) framework.
 
 16 pressure-sensitive effects mapped to the left 4x4 pad grid. Hold **Shift + Pad** to trigger. Up to 3 effects can be stacked simultaneously in series.
 
@@ -34,7 +34,7 @@ Pad velocity and aftertouch modulate effect character:
 ## Install
 
 ### From Module Store
-Available in the Move Everything Module Store (on-device and desktop installer).
+Available in the Schwung Module Store (on-device and desktop installer).
 
 ### Manual Install
 ```bash
@@ -45,7 +45,7 @@ Available in the Move Everything Module Store (on-device and desktop installer).
 ## Credits
 
 - **DSP & Design**: Vincent Fillion ([fillioning](https://github.com/fillioning))
-- **Framework**: [Move Everything](https://github.com/charlesvestal/move-everything) by Charles Vestal
+- **Framework**: [Schwung](https://github.com/charlesvestal/move-everything) by Charles Vestal
 - **Inspiration**: Teenage Engineering PO-33 K.O. punch-in effects
 
 ## License

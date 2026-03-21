@@ -10,8 +10,8 @@ if [ ! -d "dist/punchfx" ]; then
     exit 1
 fi
 
-ssh root@move.local "mkdir -p /data/UserData/move-anything/modules/audio_fx/punchfx"
-scp -r dist/punchfx/* root@move.local:/data/UserData/move-anything/modules/audio_fx/punchfx/
-ssh root@move.local "chown -R ableton:users /data/UserData/move-anything/modules/audio_fx/punchfx"
+ssh root@move.local "mkdir -p /data/UserData/schwung/modules/audio_fx/punchfx"
+scp -r dist/punchfx/* root@move.local:/data/UserData/schwung/modules/audio_fx/punchfx/
+ssh root@move.local "chown -R ableton:users /data/UserData/schwung/modules/audio_fx/punchfx"
 
-echo "Installed Punch-In FX to Move. Restart Move Everything to load."
+echo "Installed Punch-In FX to Move. Restart Schwung to load."
