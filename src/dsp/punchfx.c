@@ -4,7 +4,7 @@
  * 16 pressure-sensitive effects mapped to the left 4x4 pad grid.
  * Up to 3 effects can be stacked simultaneously in series.
  *
- * Audio FX plugin for Move-Anything (audio_fx_api_v2).
+ * Audio FX plugin for Schwung (audio_fx_api_v2).
  */
 
 #include <stdio.h>
@@ -16,7 +16,7 @@
 #include <unistd.h>
 #include <sys/mman.h>
 
-/* Move-Anything API headers */
+/* Schwung API headers */
 #include "plugin_api_v1.h"
 #include "audio_fx_api_v2.h"
 
@@ -139,7 +139,7 @@ typedef struct {
 
     /* Shadow control shared memory for reading Shift button state.
      * CC 49 is intercepted by the shadow host shim before it reaches
-     * the chain, so we read shift_held directly from /move-shadow-control. */
+     * the chain, so we read shift_held directly from /schwung-control. */
     volatile uint8_t *shadow_ctrl;  /* mmap'd shadow_control_t */
     int shadow_ctrl_fd;             /* shm file descriptor */
 
@@ -155,7 +155,7 @@ static const host_api_v1_t *g_host = NULL;
 /* ───────────────────────── Helpers ───────────────────────── */
 
 /* File-based logging — works from any thread including audio render */
-#define PLOG_PATH "/data/UserData/move-anything/punchfx_debug.log"
+#define PLOG_PATH "/data/UserData/schwung/punchfx_debug.log"
 static int plog_count = 0;
 
 static void plog(const char *msg) {
@@ -688,7 +688,7 @@ static void process_effect(punchfx_instance_t *inst, int idx,
 #define SHADOW_CTRL_SELECTED_SLOT 20
 #define SHADOW_CTRL_SHIFT_OFFSET  21
 #define SHADOW_CTRL_SIZE          64   /* CONTROL_BUFFER_SIZE */
-#define SHM_SHADOW_CONTROL        "/move-shadow-control"
+#define SHM_SHADOW_CONTROL        "/schwung-control"
 
 static void read_shift_from_shm(punchfx_instance_t *inst) {
     if (!inst->shadow_ctrl) return;

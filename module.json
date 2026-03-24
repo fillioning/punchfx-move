@@ -2,7 +2,7 @@
     "id": "punchfx",
     "name": "Punch-In FX",
     "abbrev": "PFXS",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "PO-33 style punch-in effects with pressure control. 16 effects on left 4x4 pad grid.",
     "author": "fillioning",
     "dsp": "punchfx.so",
