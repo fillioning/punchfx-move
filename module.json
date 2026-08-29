@@ -27,7 +27,8 @@
                     "name": "Punch-In FX",
                     "children": null,
                     "knobs": ["bpm", "volume", "mix"],
-                    "params": ["bpm", "volume", "mix"]
+                    "params": ["bpm", "volume", "mix",
+        { "key": "mix", "short_name": "Mix" }]
                 }
             }
         }
